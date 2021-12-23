@@ -1,7 +1,7 @@
 #ifndef __SERVER_H__
 #define __SERVER_H__
 
-#define SERVER_PORT 4162
+#define SERVER_PORT 6167
 #define THREAD_NUM 10
 #define STATIC_FILES_DIR "public"
 
