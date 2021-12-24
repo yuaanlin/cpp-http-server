@@ -1,0 +1,2 @@
+This is a sample text file which placed in server's public directory.
+That's why you can access it on this path.
