@@ -140,8 +140,13 @@ void sendNotFound(Context *ctx) {
     send(ctx->clientId, h.c_str(), h.size(), 0);
 }
 
-/** 建立一个等候连接的线程 */
+/**
+ * @brief A function which is always wating for new connection.
+ * */
 void waitNewConnection() {
+    // This thread is running in an infinite loop
+    // After an accepted connection is closed,
+    // this thread will waiting for a new connection.
     while (1) {
         int clientId;
         struct sockaddr_in clientAddr;
